@@ -61,9 +61,8 @@ const FeaturesSection = () => {
             className={`relative flex flex-col bg-gray-100 hover:bg-colors-primary/10 items-start text-start p-6 border border-teal-500 rounded-xl shadow-md hover:shadow-lg transition duration-300 ${
               index === 1 || index === 3 ? "sm:top-20 top-0" : ""
             }`}
-            style={{ zIndex: 1 }} // Ensures the content is above the image
+            style={{ zIndex: 1 }} 
           >
-            {/* Icon */}
             <div className="relative p-2 rounded-xl shadow-sm -mt-14 overflow-hidden">
               <div className="bg-white p-2 rounded-lg">{feature.icon}</div>
 
@@ -73,16 +72,13 @@ const FeaturesSection = () => {
               ></div>
             </div>
 
-            {/* Title */}
             <h3 className="text-2xl font-semibold text-black mt-4">
               {feature.title}
             </h3>
 
-            {/* Divider */}
             <div className="start-0 w-16 h-[2px] bg-teal-500 my-3 "></div>
 
-            {/* Description */}
-            <p className="text-gray-600 text-lg">{feature.description}</p>
+\            <p className="text-gray-600 text-lg">{feature.description}</p>
           </div>
         ))}
       </div>

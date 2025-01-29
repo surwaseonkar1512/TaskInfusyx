@@ -22,10 +22,8 @@ const Navbar: React.FC = () => {
   return (
     <nav className="bg-black ">
       <div className=" mx-auto max-w-[1200px]  w-full flex items-center justify-between p-4  text-white">
-        {/* Logo */}
         <div className="text-2xl font-bold">Uzbekistan Medi</div>
 
-        {/* Desktop Navbar */}
         <div className="hidden md:flex space-x-12 mx-[100px]">
           {navLinks.map((link, index) => (
             <Link
@@ -38,7 +36,6 @@ const Navbar: React.FC = () => {
           ))}
         </div>
 
-        {/* Mobile Menu Icon */}
         <button
           onClick={toggleMenu}
           className="p-2 text-white rounded-md md:hidden"

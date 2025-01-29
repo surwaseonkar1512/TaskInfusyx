@@ -16,7 +16,7 @@ interface FeesCardProps {
 const FeesCard: React.FC<FeesCardProps> = ({ college }) => {
   return (
     <div>
-      <div className="bg-white my-10 shadow-md rounded-xl overflow-hidden border border-teal-300 hover:shadow-lg transition duration-300 w-72 p-2">
+      <div className="bg-white my-10 shadow-md rounded-xl overflow-hidden border border-teal-300 hover:shadow-lg transition duration-300 w-full p-2">
         {/* Image */}
         <div className="relative">
           <Image
